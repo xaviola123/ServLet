@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css.css/estilos.css">
+</head>
+<body>
+	<form action="ServletEjecicio_01" method="post">
+
+		<p>Nombre</p>
+		<input type="text" name="nombre" id="nombre" required="required">
+
+		<p>Apellidos</p>
+		<input type="text" name="apellidos" id="apellidos" required="required">
+
+		<p>edad</p>
+		<input type="number" name="edad"> 
+		
+		<input type="date" hidden name="fecha">
+
+		<p>Elige una comida favorita</p>
+		<input type="radio" name="comidas" value="espagetis">Espagetis<br>
+		<input type="radio" name="comidas" value="lasaña">lasaña<br>
+		<input type="radio" name="comidas" value="judias">judias<br>
+		<input type="radio" name="comidas" value="sopa de fideos">sopa
+		de fideos<br>
+
+		<p>Elige tus hobbies favoritos</p>
+		<input type="checkbox" name="correr" value="correr">correr <input
+			type="checkbox" name="cantar" value="cantar">cantar <input
+			type="checkbox" name="bailar" value="bailar">bailar <input
+			type="checkbox" name="nadar" value="nadar">nadar
+
+		<p>Ciudad donde naciste</p>
+		<select name="ciudades">
+			<option>Madrid</option>
+			<option>Ourense</option>
+			<option>Coruña</option>
+			<option>Vigo</option>
+			<option>Oviedo</option>
+			<option>Barcelona</option>
+		</select>
+		<p>Selecciona las propiedades que tienes:</p>
+
+		<select name="propiedades[]" multiple>
+			<option value="casa">Casa</option>
+			<option value="apartamento">Apartamento</option>
+			<option value="villa">Villa</option>
+			<option value="chalet">Chalet</option>
+			<option value="piso">Piso</option>
+		</select> 
+		
+		<h2>Comentarios</h2>
+		<textarea type="text" name="area" id="area"></textarea>
+		<input type="submit">
+		
+	</form>
+</body>
+</html>
